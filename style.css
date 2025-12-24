@@ -71,15 +71,33 @@ img {
 .services {
     display: flex;
 }
+img[alt="call"] {
+    display: none;
+}
 @media (min-width: 769px)  {
     .services {
-    display: flex;
+      display: flex;
 }
+    .image-container {
+      display: flex;
+      align-items: start;
+    }
+    .image-box img[alt="image"] {
+      object-fit: contain;
+    } 
 }
 @media (min-width: 1120px) {
     .services {
         display: none;
     }
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+header {
+    display: none;
 }
 img[alt="chat"] {
     width: 40px;
